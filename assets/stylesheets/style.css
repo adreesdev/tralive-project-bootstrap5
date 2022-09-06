@@ -1,0 +1,207 @@
+* {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	transition: 0.2s;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.maincontainer {
+	width: 100%;
+	max-width: 1910px;
+	overflow: hidden;
+}
+.title-top {
+	margin-top: 150px;
+}
+.color-darkblue {
+	color: #0a2a5c;
+}
+.color-lightblue {
+	color: #7e9ffb;
+}
+.custom-nav-color li > button {
+	color: white;
+}
+
+.expdesbtn {
+	color: white;
+	background-image: linear-gradient(160deg, #1a326b, #0b1535);
+	padding: 1rem;
+}
+
+.expdesbtn:hover {
+	background-image: linear-gradient(160deg, #0b1535, #1a326b);
+	color: white;
+	cursor: pointer;
+}
+.btn-booking {
+	padding: 1rem;
+}
+.highlite {
+	box-shadow: 0px 7px #ffc31f;
+}
+
+.vehicle {
+	margin-top: 250px;
+	width: 100%;
+	height: fit-content;
+	max-width: 900px;
+	position: absolute;
+	animation-name: movingbus;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transition: 2s;
+}
+
+@keyframes movingbus {
+	0% {
+		left: 400px;
+		top: 0px;
+	}
+	100% {
+		left: 600px;
+		top: 0px;
+	}
+}
+
+.card {
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width: 26rem;
+}
+
+.aboutusimg {
+	width: 100%;
+	height: auto;
+	max-width: 700px;
+}
+
+.feedback {
+	background-image: linear-gradient(160deg, #6a91fb, #cd97e2);
+}
+
+.foot-bg {
+	background-color: #0a2a5c;
+	color: white;
+}
+
+.foothead {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.phone {
+	color: #fdc426;
+	font-size: 23px;
+}
+
+@media screen and (max-width: 1440px) {
+	.vehicle {
+		margin-top: 150px;
+		width: calc(60% - 100px);
+	}
+	@keyframes movingbus {
+		0% {
+			left: 300px;
+			top: 0px;
+		}
+		100% {
+			left: 500px;
+			top: 0px;
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.vehicle {
+		margin-top: 120px;
+	}
+	@keyframes movingbus {
+		0% {
+			left: 200px;
+			top: 0px;
+		}
+		100% {
+			left: 400px;
+			top: 0px;
+		}
+	}
+	.card {
+		width: 28rem;
+	}
+	.phone {
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 768px) {
+	@keyframes movingbus {
+		0% {
+			left: 100px;
+			top: 0px;
+		}
+		100% {
+			left: 250px;
+			top: 0px;
+		}
+	}
+	.card {
+		width: 21rem;
+	}
+	.aboutusimg {
+		max-width: 600px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.vehicle {
+		margin-top: 70px;
+		width: calc(50% - 20px);
+	}
+	@keyframes movingbus {
+		0% {
+			left: 100px;
+			top: 0px;
+		}
+		100% {
+			left: 150px;
+			top: 0px;
+		}
+	}
+	.card {
+		width: 24rem;
+	}
+	.btn-booking,
+	.expdesbtn {
+		padding: 0.6rem;
+	}
+	.feedback-des {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.vehicle {
+		margin-top: 60px;
+	}
+	.card {
+		width: 21rem;
+	}
+	.btn-booking,
+	.expdesbtn {
+		padding: 0.5rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.vehicle {
+		margin-top: 50px;
+	}
+	.card {
+		width: 18rem;
+	}
+	.btn-booking,
+	.expdesbtn {
+		padding: 0.4rem;
+	}
+}
